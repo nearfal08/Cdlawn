@@ -20,6 +20,10 @@ regions:
   footer_second: 'Second Bottom'
   footer_third: 'Third Bottom'
   footer_fourth: 'Fourth Bottom'
+  
+ckeditor_stylesheets:
+  - assets/css/style.css
+  - assets/css/bootstrap.min.css
 
 # Assets
 libraries:
