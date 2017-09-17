@@ -11,8 +11,8 @@ favicon:
   path: ''
 slideshow_display: 1
 show_breadcrumbs: 1
-slide1_head: 'Sample product'
-slide2_head: 'Sample service'
+slide1_head: 'Slide 1'
+slide2_head: 'Slide 2'
 slide3_head: 'Contact us'
 slide4_head: 'Test'
 slide1_desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor...'

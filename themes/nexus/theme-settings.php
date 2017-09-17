@@ -46,12 +46,14 @@ function nexus_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['nexus_settings']['slideshow']['slide1']['slide1_head'] = array(
     '#type' => 'textfield',
     '#title' => t('Slide Headline'),
-    '#default_value' => theme_get_setting('slide1_head','nexus'),
+    // '#default_value' => theme_get_setting('slide1_head','nexus'),
+    '#default_value' => 'Slide 1',
   );
   $form['nexus_settings']['slideshow']['slide1']['slide1_desc'] = array(
     '#type' => 'textarea',
     '#title' => t('Slide Description'),
-    '#default_value' => theme_get_setting('slide1_desc','nexus'),
+    // '#default_value' => theme_get_setting('slide1_desc','nexus'),
+    '#default_value' => 'Slide 1 Description',
   );
   $form['nexus_settings']['slideshow']['slide1']['slide1_url'] = array(
     '#type' => 'textfield',

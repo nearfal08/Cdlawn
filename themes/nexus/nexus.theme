@@ -10,24 +10,25 @@
  *
  * Override or insert variables into the page template.
  */
-function nexus_preprocess_page(&$variables) {
+function nexus_preprocess_page(&$variables) { 
   $variables['slideshow_display'] = theme_get_setting('slideshow_display','nexus');
 
-  $variables['slide1_head'] = theme_get_setting('slide1_head','nexus');
-  $variables['slide1_desc'] = check_markup(theme_get_setting('slide1_desc','nexus'), 'full_html');
-  $variables['slide1_url'] = theme_get_setting('slide1_url','nexus');
+  // $variables['slide1_head'] = theme_get_setting('slide1_head','nexus');
+  $variables['slide1_head'] = 'About Us';
+  $variables['slide1_desc'] = 'Visit our about us to page to see the history of C&D Lawncare and the values we hold to as a company.'; 
+  $variables['slide1_url'] = '/about-us';
 
-  $variables['slide2_head'] = theme_get_setting('slide2_head','nexus');
-  $variables['slide2_desc'] = check_markup(theme_get_setting('slide2_desc','nexus'), 'full_html');
-  $variables['slide2_url'] = theme_get_setting('slide2_url','nexus');
+  $variables['slide2_head'] = 'Services';
+  $variables['slide2_desc'] = 'We provide many services at exceptional quality. Visit our services page to learn more about them.';
+  $variables['slide2_url'] = '/services';
 
-  $variables['slide3_head'] = theme_get_setting('slide3_head','nexus');
-  $variables['slide3_desc'] = check_markup(theme_get_setting('slide3_desc','nexus'), 'full_html');
-  $variables['slide3_url'] = theme_get_setting('slide3_url','nexus');
+  $variables['slide3_head'] = 'Our Work';
+  $variables['slide3_desc'] = 'Want proof. View our lawncare work in the photo gallery.';
+  $variables['slide3_url'] = '/our-work';
 	
-  $variables['slide4_head'] = theme_get_setting('slide4_head','nexus');
-  $variables['slide4_desc'] = check_markup(theme_get_setting('slide4_desc','nexus'), 'full_html');
-  $variables['slide4_url'] = theme_get_setting('slide4_url','nexus');
+  $variables['slide4_head'] = 'Contact Us';
+  $variables['slide4_desc'] = 'Have a question or want a quote? Visit our contact page to get in touch with us.';
+  $variables['slide4_url'] = '/contact-us';
 
   $variables['this_year']= date('Y');
 
@@ -39,6 +40,9 @@ function nexus_preprocess_page(&$variables) {
   $variables['footer_col'] = ($variables['footer_col'] > 0)
     ? (12 / $variables['footer_col']) : 0;
 
+	if ($vars['is_front']) {
+		//$block = BlockContent::load(5);
+    }
 
 }
 
